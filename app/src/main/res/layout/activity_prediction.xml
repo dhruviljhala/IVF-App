@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prediction">
+
+
+    <Button
+        android:id="@+id/button_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Provide Feedback"
+        android:textColor="#FFFFFF" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView_Pred_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginBottom="201dp"
+            android:text="Prediction Ouput for Parameters"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView_Pred_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="89dp"
+            android:layout_marginRight="89dp"
+            android:layout_marginBottom="108dp"
+            android:text="Prediction Ouput for Image"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_Once_more"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Predict Once More"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView_thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:text="Thank You !!"
+        android:textAlignment="center"
+        android:textColor="#66FF50"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_smile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView_thankyou"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        app:srcCompat="@drawable/smile1" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button_Once_more"
+        android:layout_marginBottom="7dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
+
+

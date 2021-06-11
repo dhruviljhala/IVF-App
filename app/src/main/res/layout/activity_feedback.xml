@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Prediction">
+
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Feedback"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_below="@+id/button_Feedback"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        tools:text="How was your Experience ? Please Rate on below." />
+
+    <RadioGroup
+        android:id="@+id/Radio_Group"
+        android:layout_width="338dp"
+        android:layout_height="355dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_Excellent"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/radioButton_good"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/radioButton_average"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Average" />
+
+        <RadioButton
+            android:id="@+id/radioButton_poor"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Poor" />
+
+        <RadioButton
+            android:id="@+id/radioButton_worst"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Worst" />
+    </RadioGroup>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:alpha=".8"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignEnd="@+id/editText_name"
+        android:layout_alignRight="@+id/editText_name"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="E-mail ID"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_pwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_email"
+        android:layout_alignStart="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_confirm_pwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_pwd"
+        android:layout_alignStart="@+id/editText_pwd"
+        android:layout_alignLeft="@+id/editText_pwd"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_contact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_confirm_pwd"
+        android:layout_alignEnd="@+id/editText_confirm_pwd"
+        android:layout_alignRight="@+id/editText_confirm_pwd"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Contact No."
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/lobster"
+        android:text="Registration"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

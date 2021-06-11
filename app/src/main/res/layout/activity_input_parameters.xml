@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.fyp.Input_parameters">
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="69dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Upload"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/next_page"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Enter_Paramters"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="661dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Enter Parameters"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextNumber_preg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber_prev_ivf"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="43dp"
+        android:layout_toEndOf="@+id/textView_Age"
+        android:layout_toRightOf="@+id/textView_Age"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView_Age"
+        android:layout_width="89dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="82dp"
+        android:text="Age during Treatment"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_prev_IVF"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_Age"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="36dp"
+        android:text="Total no. of previous IVF Cycles"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_prev_preg"
+        android:layout_width="101dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/textView_prev_IVF"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:text="Total no. of previous Pregnancies"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_embryo_count"
+        android:layout_width="98dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/textView_prev_preg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="44dp"
+        android:text="Embryos Transfered"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber_embryo_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber_preg_count"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/textView_Age"
+        android:layout_toRightOf="@+id/textView_Age"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNumber_birth_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber_embryo_count"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/textView_Age"
+        android:layout_toRightOf="@+id/textView_Age"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView_live_birth"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_embryo_count"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="35dp"
+        android:text="No. of Births"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber_prev_ivf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumber_age"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="52dp"
+        android:layout_toEndOf="@+id/textView_Age"
+        android:layout_toRightOf="@+id/textView_Age"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNumber_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@+id/textView_Age"
+        android:layout_toRightOf="@+id/textView_Age"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

@@ -11,30 +11,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
         android:fontFamily="@font/lobster"
-        android:text="Pizza Hub"
+        android:text="Welcome"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="55sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="194dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
         android:ems="10"
         android:hint="E-mail ID"
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText_email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_alignStart="@+id/editText_name"
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="Password"
@@ -47,7 +53,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editText_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="62dp"
         android:textColor="#FFFFFF"
@@ -64,16 +70,7 @@
         android:layout_marginTop="49dp"
         android:text="Sign Up"
         android:textColor="#FFFFFF"/>
-    <Button
-        android:id="@+id/team"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:layout_below="@+id/signup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:textColor="#FFFFFF"
-        android:text="Meet The Team" />
+
     <ProgressBar
         android:id="@+id/progressbar"
         android:visibility="gone"
